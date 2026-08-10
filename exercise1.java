@@ -19,11 +19,15 @@ public void main(String[] args) {
 
 
     System.out.println("Exercise 2:--------------------------------------");
-    // Exercise 2 //التوتل لاتها نسبة مئوية فهي ثابته فتركتها في الكود بدل من ان يدخلها اليوزر
+    // Exercise 2 
 
     System.out.println("Enter the Obatines Marks :");
     double obatinesMarks = input.nextDouble();
-    double total =(obatinesMarks/100)*100;
+
+    System.out.println("Enter the Total Marks :");
+    double totalmarks = input.nextDouble();
+
+    double total =(obatinesMarks/totalmarks)*100;
     System.out.println("WOW Total Marks is :"+total+"%");
 
 
