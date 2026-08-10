@@ -14,9 +14,11 @@ public void main(String[] args) {
 
     System.out.println("The BMI resalt :");
     System.out.println(weight/(height*height));
-    double bmi = input.nextDouble();
 
 
+
+
+    System.out.println("Exercise 2:--------------------------------------");
     // Exercise 2 //التوتل لاتها نسبة مئوية فهي ثابته فتركتها في الكود بدل من ان يدخلها اليوزر
 
     System.out.println("Enter the Obatines Marks :");
@@ -25,7 +27,13 @@ public void main(String[] args) {
     System.out.println("WOW Total Marks is :"+total+"%");
 
 
+
+
+    System.out.println("Exercise 3 :--------------------------------------");
     // Exercise 3
+
+
+
 
     System.out.println("how much money do you want to transfer in USD?");
     double usd =input.nextDouble();
@@ -38,8 +46,12 @@ public void main(String[] args) {
 
 
 
+
+
+    System.out.println("Exercise 4 :--------------------------------------");
     // Exercise 4
 
+ input.nextLine();
  System.out.println("Enter text");
 
  StringBuilder text = new StringBuilder();
@@ -50,16 +62,24 @@ public void main(String[] args) {
 
 
 
+
+    System.out.println("Exercise 5 :--------------------------------------");
     // Exercise 5
+
 
      System.out.println( "Enter the Book text");
      String book =input.nextLine();
-// use the substring function used to take values between the ranges
+     // use the substring function used to take values between the ranges
      System.out.println(book.substring(10,20));//start index 10 ,, End index 20 , the quick brown for jumps over the lazy dog
 
 
 
+
+    System.out.println("Exercise 6 :--------------------------------------");
     // Exercise 6
+
+
+
     System.out.println("Enter Your Email plase");
     String email=input.nextLine();
 
@@ -70,10 +90,13 @@ public void main(String[] args) {
 
 
 
+
+
+    System.out.println("Exercise 7 :--------------------------------------");
     // Exercise 7
 
 
-System.out.println("how i can help you");
+System.out.println("Do you want replace the text ?");
 System.out.println("Please enter the text : ");
 String text1=input.nextLine();
 
@@ -88,8 +111,8 @@ System.out.println(text1.replace(oldchar,newchar));
 
 
 
-
-    // Exercise 8
+    System.out.println("Exercise 8 :--------------------------------------");
+    // Exercise 8a
 
 
 System.out.println("enter a first String");
@@ -100,7 +123,7 @@ System.out.println("enter a Second String");
 String value2 = input.nextLine();
 value2 = value2.toLowerCase();
 
-System.out.println(value1.equals(value2) +" "+"Tha value1 equals value2 ");
+System.out.println(value1.equals(value2) +" "+"Tha value1 equals or ignoring value2 ");
 
 
 
