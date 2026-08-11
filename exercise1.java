@@ -4,7 +4,7 @@ public void main(String[] args) {
 
      Scanner input = new Scanner(System.in);
 
-    // Exercise 1
+//    // Exercise 1
 
     System.out.println("Enter the weight :");
     double weight = input.nextDouble();
@@ -19,7 +19,7 @@ public void main(String[] args) {
 
 
     System.out.println("Exercise 2:--------------------------------------");
-    // Exercise 2 
+    // Exercise 2
 
     System.out.println("Enter the Obatines Marks :");
     double obatinesMarks = input.nextDouble();
@@ -74,7 +74,13 @@ public void main(String[] args) {
      System.out.println( "Enter the Book text");
      String book =input.nextLine();
      // use the substring function used to take values between the ranges
-     System.out.println(book.substring(10,20));//start index 10 ,, End index 20 , the quick brown for jumps over the lazy dog
+
+    System.out.println( "Enter the Start index ");
+    int start =input.nextInt();
+    System.out.println( "Enter the End index ");
+    int end =input.nextInt();
+    System.out.println(book.substring(start,end));
+////     System.out.println(book.substring(10,20));//start index 10 ,, End index 20 , the quick brown for jumps over the lazy dog
 
 
 
@@ -82,16 +88,13 @@ public void main(String[] args) {
     System.out.println("Exercise 6 :--------------------------------------");
     // Exercise 6
 
-
-
     System.out.println("Enter Your Email plase");
     String email=input.nextLine();
 
     System.out.println("Enter KeyWord");
     String keyword=input.nextLine();
 
-    System.out.println(email.replaceAll(keyword,"the"+" "+keyword+" "+"is keyword"));
-
+    System.out.println(email.concat(" " +"keyword"+" "+keyword +" "+"is present in the sentence"));
 
 
 
