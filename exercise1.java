@@ -94,7 +94,7 @@ public void main(String[] args) {
     System.out.println("Enter KeyWord");
     String keyword=input.nextLine();
 
-    System.out.println(email.concat(" " +"keyword"+" "+keyword +" "+"is present in the sentence"));
+    System.out.println(email.contains(" " +"keyword"+" "+keyword +" "+"is present in the sentence"));
 
 
 
