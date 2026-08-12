@@ -1,4 +1,4 @@
-
+import java.util.Random;
 
 public static void main (String [] args){
 
@@ -62,35 +62,39 @@ else {
 
 
 
-     System.out.println(" To Help You , Enter A Number Form 1-7 To Representing The Days of The Week : ");
-     int week =input.nextInt();
-     switch(week){
-         case 1:
-             System.out.println(" Sunday ");
-             break;
-         case 2:
-             System.out.println(" Monday ");
-             break;
-         case 3:
-             System.out.println(" Tuesday ");
-             break;
-         case  4:
-             System.out.println(" Wednesday");
-             break;
+    System.out.println(" To Help You , Enter A Number Form 1-7 To Representing The Days of The Week : ");
+    Random r=new Random();
+    int week =r.nextInt(7);
 
-         case 5:
-              System.out.println(" Thursday ");
-              break;
+    switch(week) {
+        case 1:
+            System.out.println(" Sunday ");
+            break;
+        case 2:
+            System.out.println(" Monday ");
+            break;
+        case 3:
+            System.out.println(" Tuesday ");
+            break;
+        case 4:
+            System.out.println(" Wednesday");
+            break;
 
-         case 6:
-             System.out.println(" Friday ");
+        case 5:
+            System.out.println(" Thursday ");
+            break;
 
-         case 7:
-             System.out.println(" Saturday ");
-             break;
+        case 6:
+            System.out.println(" Friday ");
 
-         default:
-             System.out.println("Invalid Input");
+        case 7:
+            System.out.println(" Saturday ");
+            break;
+
+        default:
+            System.out.println(" Invalid Week");
+
+         System.out.println("Today is your lucky day"+week);
 
 
      }
