@@ -64,7 +64,7 @@ else {
 
     System.out.println(" To Help You , Enter A Number Form 1-7 To Representing The Days of The Week : ");
     Random r=new Random();
-    int week =r.nextInt(7);
+    int week =r.nextInt(7)+1;
 
     switch(week) {
         case 1:
@@ -86,7 +86,7 @@ else {
 
         case 6:
             System.out.println(" Friday ");
-
+  break;
         case 7:
             System.out.println(" Saturday ");
             break;
