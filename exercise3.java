@@ -5,7 +5,19 @@ public class exercise3 {
 
         Scanner sc = new Scanner(System.in);
         //EX1
+for (int r = 0; r <= 100; r++) {
+        System.out.println(r);
+        if (r % 3 == 0) {
+            System.out.println("Fizz");
 
+        } else if (r % 5 == 0) {
+            System.out.println("Buzz");
+
+
+        } else if (r % 5 == 0) {
+            System.out.println("FizzBuzz");
+        }
+    }
 
         //EX2
 
