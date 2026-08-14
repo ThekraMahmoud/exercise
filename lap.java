@@ -282,7 +282,7 @@ while (iop>=3){
 
 
 
-       Scanner s = new Scanner(System.in);
+      Scanner s = new Scanner(System.in);
         System.out.println("Enter the text");
         String text = s.nextLine();
         int a;
@@ -292,7 +292,8 @@ while (iop>=3){
             char ch=text.charAt(aa);
 
             if (ch=='a'){
-                System.out.println(ch);
+                indexa++;
+                System.out.print(indexa);
             }
 
 
