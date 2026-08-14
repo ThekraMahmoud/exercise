@@ -282,17 +282,18 @@ while (iop>=3){
 
 
 
-        System.out.println("rr");
-//int x=0;
-        String you =s.nextLine();///string
-        int mn=you.length();
-        System.out.println("enter tha");
-        String yu =s.nextLine();//a
-            for(int x=0;x<=mn;x++){
-               boolean ww= you.equals(yu);
-//               continue;
-                System.out.println(ww);
-//             a(you.equals(yu));
+       Scanner s = new Scanner(System.in);
+        System.out.println("Enter the text");
+        String text = s.nextLine();
+        int a;
+        int indexa = 0;
+        int indexa1 = 0;
+        for (int aa = 0; aa <= text.length(); aa++) {
+            char ch=text.charAt(aa);
+
+            if (ch=='a'){
+                System.out.println(ch);
+            }
 
 
         }
