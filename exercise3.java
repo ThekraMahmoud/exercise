@@ -1,257 +1,223 @@
 import java.util.Scanner;
-
 public class exercise3 {
+
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-        //EX1
-for (int r = 0; r <= 100; r++) {
-        System.out.println(r);
-        if (r % 3 == 0) {
-            System.out.println("Fizz");
-
-        } else if (r % 5 == 0) {
-            System.out.println("Buzz");
+    Scanner s = new Scanner(System.in);
 
 
-        } else if (r % 5 == 0) {
-            System.out.println("FizzBuzz");
+        //Exercise1
+for (int i=0;i<=100;i++)
+{
+     if (i % 3 == 0) {
+         System.out.println("fizz "+i);
+    } else if (i % 5 == 0) {
+        System.out.println("Buzz "+i);
+    }else if(i%3==0&&i%5==0){
+        System.out.println("FizzBuzz "+i);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+        //Exercise2
+        System.out.println("How many time wont to revise Your text");
+        int time=s.nextInt();
+        int t=0;
+        do {
+            t++;
+            StringBuilder in = new StringBuilder();
+            s.nextLine();
+
+            System.out.println("Enter the String "+t+":");
+            in.append(s.nextLine());
+            System.out.println("The revise of Text " + in.reverse());
+        }while (t<time);
+        System.out.println("THINK YOU , BYY BYE" );
+
+        
+        // Another Solve to Exercise 2
+//     System.out.println("Enter the String :");
+//     String in=s.nextLine();
+//     for (int b=in.length()-1;b>=0;b--)
+//     {
+//         System.out.print(in.charAt(b));
+//     }
+
+
+        
+        
+        
+        
+        
+        
+        //Exercise3
+     System.out.println("To Calculate the factory please enter a number");
+     int d=s.nextInt();
+     int resalt =1;
+     for( int a=d;a>=1;a--){
+         resalt=resalt*a;
+     }
+     System.out.println(resalt);
+
+
+
+        //   Exercise4
+     System.out.println("Enter the Number one to Start");
+     int num1=s.nextInt();
+     System.out.println("Enter the Number Tow Please");
+     int num2=s.nextInt();
+
+     int resalt=1;
+     int c;
+
+     for(c=1;c<=num2;c++) {
+         resalt = resalt * num1;
+     }
+     if (num2 < num1) {
+         System.out.println(resalt);
+     }
+     for (c = 1; c <= num1; c++) {
+             resalt = resalt * num2;
+     }
+     if (num1 < num2) {
+         System.out.println(resalt);
+     }
+
+
+        //Example5
+     System.out.println("How math time do Wont to test ?");
+     int test=s.nextInt();
+
+         int end =0;
+         int res=0;
+         int res1=0;
+
+         do {
+         System.out.println("Enter The Numbers?");
+         int add = s.nextInt();
+         if (add % 2 == 0) {
+             res = res + add;
+             System.out.println("The number is even");
+         } else if (add % 2 != 0) {
+             res1 = res1 + add;
+             System.out.println("The number is odd");
+         }
+         end++;
+     } while (end <=test);
+     System.out.println( "The Add of evan number in "+res);
+     System.out.println( "The Add of odd number in "+res1);
+
+
+
+//Example 6
+//
+        
+     System.out.println("Enter Number ");
+     int positive = s.nextInt();
+     int p = 1;
+     int as = 0;
+
+     if (positive <= 0) {
+         System.out.println("pleas Enter the positive value");
+         positive = s.nextInt();
+
+     for (p = positive; p > 0; p--) {
+         if (p % 2 != 0) {
+             System.out.println("the number is prime " + p);
+         } else {
+             System.out.println("the number NOT a prime " + p);
+         }
+     }
+ }
+
+
+
+
+
+
+        //Example 7
+        int dayInWeek = 0;
+        int week = 0;
+
+        do {
+            System.out.println("Select week Form 1-4");
+            int user = s.nextInt();
+
+            for (int day = 1; day <= 7; day++) {
+                dayInWeek = dayInWeek + day;
+                if (day == 1) {
+                    System.out.println("----------------- ");
+                    System.out.println("The| Day is |Sunday ");
+                } else if (day == 2) {
+                    System.out.println("----------------- ");
+                    System.out.println("The| Day is  |Monday ");
+                } else if (day == 3) {
+                    System.out.println("----------------- ");
+                    System.out.println("The| Day is |Tuesday ");
+                } else if (day == 4) {
+                    System.out.println("----------------- ");
+                    System.out.println("The| Day is |Wednesday ");
+                } else if (day == 5) {
+                    System.out.println("----------------- ");
+                    System.out.println("The| Day is |Thursday ");
+                } else if (day == 6) {
+                    System.out.println("----------------- ");
+                    System.out.println("The| Day is |Friday ");
+                } else if (day == 7) {
+                    System.out.println("The| Day is |Saturday ");
+                } else {
+                    System.out.println("Invalid input");
+                }
+            }
+
+        } while (week >= 4);
+
+
+        
+        
+        
+        
+//Example 8
+        System.out.println("Enter your Text");
+        String enterWord=s.nextLine();
+        for(int w=enterWord.length()-1;w>=0;w--){
+            System.out.print(enterWord.charAt(w));
         }
+
+        
+        
+        
     }
 
-        //EX2
-
-        int numberOfText = 0;
-        String ae = "";
-
-        switch (numberOfText) {
-            case 1:
-                String a = "First";
-                System.out.println(a);
-                break;
-
-            case 2:
-
-                a = "Scond";
-                System.out.println(a);
-                break;
-
-            case 3:
-                a = "Three";
-                System.out.println(a);
-                break;
-
-        }
-
-        System.out.println("Ex2");
-        int i = 0;
-        int na = 0;
-        if (na >= 0) {
-            System.out.println("How number of reverse do You wont ? Most be enter number");
-            na = sc.nextInt();
-            sc.nextLine();
-            do {
-                for (numberOfText = 1; numberOfText <= 3; numberOfText++) {
-                    StringBuilder text = new StringBuilder();
-                    System.out.println("Enter the text to revise");
-                    System.out.println("Enter the" + numberOfText + "text to revise");
+}
 
 
-                    text.append(sc.nextLine());
-                    System.out.println("Th revise is " + '\n' + text.reverse() + '\n' + "############");
-                    i++;
-
-                }
-
-            }while (i <= na) ;
-            System.out.println("THINK YOU **!");
 
 
-            System.out.println("Ex3##########################3");
-            //EX3
-
-            System.out.println("If you wont learning Malt table use these program");
-            int enterValue = sc.nextInt();
-            for (int i1 = 0; i1 <= 10; i1++) {
-                System.out.println("------------------------------");
-                System.out.println(enterValue + "          *        " + i1 + "   =   " + enterValue * i1);
-                System.out.println("------------------------------");
-
-            }
-            System.out.println("If you wont learning Malt table use these program");
 
 
-            System.out.println("Ex4##########################");
 
 
-            int i4 = 1;
-            System.out.println("enter number1");
-            int number1 = sc.nextInt();
-
-            System.out.println("enter number2");
-            int number2 = sc.nextInt();
-
-            System.out.println("select the number wont to use");
-            int select = sc.nextInt();
-            sc.nextLine();
-
-            int resalt = 1;
-            if (select == 1) {
-                for (i4 = 1; i4 <= number2; i4++) {
-                    resalt = resalt * number1;
-                    System.out.println(resalt);
 
 
-                }
-            } else if (select == 2) {
-                System.out.println(number2);
-                for (i4 = 1; i4 <= number1; i4++) {
-                    resalt = resalt * number1;
-                    System.out.println(resalt);
-
-                }
 
 
-                // }
 
 
-//        System.out.println("enter number2");
-//        int num2=sc.nextInt();
-//
 
 
-//        System.out.println(num1+num1);
-
-//        int i5=0;
-//       int enter1=sc.nextInt();
 
 
-//
-                System.out.println("Ex5##########################");
-                System.out.println("How math time do Wont to test ?");
-                int i = 0;
-                int i5 = sc.nextInt();
-                int odd = 0;
-                int evan = 0;
-
-                do {
-                    System.out.println("enter number");
-                    int num1 = sc.nextInt();
-                    if (num1 % 2 == 0) {
-                        evan = num1 + evan;
-                    } else if (num1 % 2 != 0) {
-                        odd = odd + num1;
-                    }
-
-                    System.out.println("the some of Evan number is :" + evan);
-                    System.out.println("the some of odd number is :" + odd);
-                    i++;
 
 
-                } while (i <= i5);
-
-
-                System.out.println("Ex6##########################");
-
-                System.out.println("Enter integer value");
-                int num7 = sc.nextInt();
-                int p;
-                int totel = 0;
-                for (p = 1; p <= num7; p++) {
-                    if (num7 % p == 0) {
-                        totel++;
-                        System.out.println("The prime number of " + p + " = " + totel);
-                    } else {
-                        System.out.println("not");
-                    }
-                }
-                if (totel <= 2) {
-                    System.out.println("Th prime factor is  " + totel);
-                } else {
-                    System.out.println("Th  factor is  " + totel + " so is not prime factor");
-
-                }
-
-
-                System.out.println("Ex7##########################");
-
-
-                int ii = 0;
-                int day;
-                do {
-                    System.out.println("Select Week");
-                    int week = sc.nextInt();
-                    System.out.println("Th week is:" + week);
-                    System.out.println("###############################");
-
-                    if (week <= 5) {
-                        for (day = 1; day <= 7; day++) {
-                            System.out.println("Th day is:" + day);
-                            if (day == 1) {
-                                System.out.println("----------------- ");
-                                System.out.println("The| Day is |Sunday ");
-                            } else if (day == 2) {
-                                System.out.println("----------------- ");
-                                System.out.println("The| Day is  |Monday ");
-                            } else if (day == 3) {
-                                System.out.println("----------------- ");
-                                System.out.println("The| Day is |Tuesday ");
-                            } else if (day == 4) {
-                                System.out.println("----------------- ");
-                                System.out.println("The| Day is |Wednesday ");
-                            } else if (day == 5) {
-                                System.out.println("----------------- ");
-                                System.out.println("The| Day is |Thursday ");
-                            } else if (day == 6) {
-                                System.out.println("----------------- ");
-                                System.out.println("The| Day is |Friday ");
-                            } else if (day == 7) {
-                                System.out.println("The| Day is |Saturday ");
-                            } else {
-                                System.out.println("Invalid input");
-                            }
-
-                        }
-                    }
-                    System.out.println("Have a nice day" + '\n' + "Thanks for using our program");
-                    ii++;
-                }
-                while (ii <= 5);
-
-
-                System.out.println("Ex8##########################3");
-
-                int a1;
-//       int e=text5;
-                System.out.println("Enter the text");
-                String text5 = sc.nextLine();
-//        System.out.println(text5);
-
-                for (a1 = text5.length() - 1; a1 >= 0; a1--) {
-                    System.out.println("the palndeome is");
-                    System.out.print(text5.charAt(a1));
-
-                }
-//         for (a=0;a<text5.length();a++)  {
-//             System.out.println(text5.charAt(a));
-//             System.out.println(text5);
-
-
-            }
-
-//        for(a=0;a<text5.length()/2;a++){
-//            if (text5.length()!=text5.charAt(a)){
-//                text5.charAt(a);a--;
-//                System.out.println(text5);
-//            }
-//
-
-
-//            System.out.println(text5.charAt(a));
-
-
-        }
-    }}
 
 
 
