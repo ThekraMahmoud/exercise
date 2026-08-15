@@ -153,26 +153,12 @@ StringBuilder rev=new StringBuilder();
 
 }
 
-        System.out.println("Enter the seconds");
-        double us1= s.nextInt();
-
-        System.out.println("Enter the minutes");
-        double us2= s.nextInt();
-
-//        double h= s.nextInt();
-
-        double sc =86400*0.0002777777778;
-        double m=1440;
-        double h=24;
-
-        double seconds=m/h;
-        System.out.println( "the seconds"+seconds);
-
-        double hours=sc*us1/h;
-        System.out.println("the hours"+hours);
-
-        double minutes=m/us2;
-        System.out.println("the minutes"+minutes);
+        System.out.println("input second");
+        int second=s.nextInt();
+        int hours=second/3600;
+        int minutes=(second%3600)/60;
+        second=second%60;
+        System.out.println(hours+":"+minutes+":"+second);
 
 //
 
