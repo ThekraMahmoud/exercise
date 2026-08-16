@@ -144,52 +144,85 @@ for (int i=0;i<=100;i++)
 
 
         //Example 7
-        int dayInWeek = 0;
-        int week = 0;
 
-        do {
-            System.out.println("Select week Form 1-4");
-            int user = s.nextInt();
-
-            for (int day = 1; day <= 7; day++) {
-                dayInWeek = dayInWeek + day;
-                if (day == 1) {
-                    System.out.println("----------------- ");
-                    System.out.println("The| Day is |Sunday ");
-                } else if (day == 2) {
-                    System.out.println("----------------- ");
-                    System.out.println("The| Day is  |Monday ");
-                } else if (day == 3) {
-                    System.out.println("----------------- ");
-                    System.out.println("The| Day is |Tuesday ");
-                } else if (day == 4) {
-                    System.out.println("----------------- ");
-                    System.out.println("The| Day is |Wednesday ");
-                } else if (day == 5) {
-                    System.out.println("----------------- ");
-                    System.out.println("The| Day is |Thursday ");
-                } else if (day == 6) {
-                    System.out.println("----------------- ");
-                    System.out.println("The| Day is |Friday ");
-                } else if (day == 7) {
-                    System.out.println("The| Day is |Saturday ");
-                } else {
-                    System.out.println("Invalid input");
-                }
+        int week=0;
+        int day=0;
+        Random random = new Random();
+        int randomeWeek=0;
+        int randomedey=0;
+        for ( week = 0; week <= 4; week++) {
+            randomeWeek = random.nextInt(4) + 1;
+            for (day = 1; day <= 7; day++) {
+                randomedey = random.nextInt(7) + 1;
             }
+        }
+            System.out.println("the week " + randomeWeek);
+            System.out.println("the day " + randomedey);
 
-        } while (week >= 4);
+        // int dayInWeek = 0;
+        // int week = 0;
+
+        // do {
+        //     System.out.println("Select week Form 1-4");
+        //     int user = s.nextInt();
+
+        //     for (int day = 1; day <= 7; day++) {
+        //         dayInWeek = dayInWeek + day;
+        //         if (day == 1) {
+        //             System.out.println("----------------- ");
+        //             System.out.println("The| Day is |Sunday ");
+        //         } else if (day == 2) {
+        //             System.out.println("----------------- ");
+        //             System.out.println("The| Day is  |Monday ");
+        //         } else if (day == 3) {
+        //             System.out.println("----------------- ");
+        //             System.out.println("The| Day is |Tuesday ");
+        //         } else if (day == 4) {
+        //             System.out.println("----------------- ");
+        //             System.out.println("The| Day is |Wednesday ");
+        //         } else if (day == 5) {
+        //             System.out.println("----------------- ");
+        //             System.out.println("The| Day is |Thursday ");
+        //         } else if (day == 6) {
+        //             System.out.println("----------------- ");
+        //             System.out.println("The| Day is |Friday ");
+        //         } else if (day == 7) {
+        //             System.out.println("The| Day is |Saturday ");
+        //         } else {
+        //             System.out.println("Invalid input");
+        //         }
+        //     }
+
+        // } while (week >= 4);
 
 
-        
+
+
         
         
         
 //Example 8
+
+        String revase="";
         System.out.println("Enter your Text");
         String enterWord=s.nextLine();
         for(int w=enterWord.length()-1;w>=0;w--){
-            System.out.print(enterWord.charAt(w));
+             revase=revase+enterWord.charAt(w);
+        }
+
+        String orginal="";
+        for (int r=revase.length()-1;r>=0;r--) {
+            orginal=orginal+revase.charAt(r);
+
+            if(enterWord.equals(orginal)){
+                System.out.println(true);
+            }
+
+       }
+        // System.out.println("Enter your Text");
+        // String enterWord=s.nextLine();
+        // for(int w=enterWord.length()-1;w>=0;w--){
+        //     System.out.print(enterWord.charAt(w));
         }
 
         
