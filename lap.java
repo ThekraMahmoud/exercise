@@ -20,125 +20,164 @@
         //2
             System.out.println("Enter the number to mult in 10");
             int in=s.nextInt();
-//            int i=1;
             for (int i=1;i<=10;i++){
                     System.out.println(i+"*"+in+"="+i*in);
-
             }
 
+        
 
-            double r=3.14;
-            int p =s.nextInt();
-//            int  p2 =*r;
+//3
+        double r =s.nextInt();
+        double o=3.14;
+        double area=o*r*r;
+        double primeter=2*o*area;
+        System.out.println("number of r");
+        System.out.println("The radius"+area);
+        System.out.println("tha Perimeter is"+primeter);
+
 
 
 
 
             //4
+        int count=1;
+        double res=0;
+        int i=1;
+        System.out.println("enter the count number");
+        count=s.nextInt();
+        do {
+         System.out.println("enter the integer");
+         int n =s.nextInt();
+         res=res+n;
+         i++;
+     } while (i<=count);
+        System.out.println("the average :"+res/count);
 
-int io =0;
-            System.out.println("number");
-            int n4= s.nextInt();
-            while (io<=n4) {
-                    io++;
-                    System.out.println("number");
-                    int n3 = s.nextInt();
-                    System.out.println("The sum of numbers =");
-                    System.out.println(n3 + n3);
-            }
-//
-            System.out.println("number1");
-            int number1=s.nextInt();
-          System.out.println("number2");
-            int number2=s.nextInt();
-            System.out.println("number3");
-            int number3=s.nextInt();
+// int io =0;
+//             System.out.println("number");
+//             int n4= s.nextInt();
+//             while (io<=n4) {
+//                     io++;
+//                     System.out.println("number");
+//                     int n3 = s.nextInt();
+//                     System.out.println("The sum of numbers =");
+//                     System.out.println(n3 + n3);
+//             }
 
-            int sum1=number1+number2;
-            if (sum1==number3){
-                    System.out.println("The sum of number 1 + number2 is equal the number3 "+number3);
-            }else {
-                    System.out.println("The sum of number 1 + number2 is  NOT equal the number3"+number3);
 
-            }
+
+
+
+        //ex5
+
+        int n1=s.nextInt();
+        int n2=s.nextInt();
+        int n3=s.nextInt();
+        if (n1+n2==n3){
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
+
+          //   System.out.println("number1");
+          //   int number1=s.nextInt();
+          // System.out.println("number2");
+          //   int number2=s.nextInt();
+          //   System.out.println("number3");
+          //   int number3=s.nextInt();
+
+          //   int sum1=number1+number2;
+          //   if (sum1==number3){
+          //           System.out.println("The sum of number 1 + number2 is equal the number3 "+number3);
+          //   }else {
+          //           System.out.println("The sum of number 1 + number2 is  NOT equal the number3"+number3);
+
+          //   }
+
+
+
+
+        
 
             //ex6
 
-            System.out.println("enter text");
-            StringBuilder str=new StringBuilder();
-StringBuilder rev=new StringBuilder();
-       rev.append(s.nextLine());
+              System.out.println("Enter a String");
+        String inout=s.nextLine();
+        int i=0;
+        int res=0;
+        for (i=inout.length()-1;i>=0;i--){
+            System.out.print(inout.charAt(i));
+        }
 
-            System.out.println("the revesrs"+rev.reverse());
 
 
+    //ex7
+            int i =0;
+        while (i<=3){
+            System.out.println("enter number");
+            int e=s.nextInt();
+            if (e==0){
+                System.out.println("zero");
+            }else if(e%2==0){
+                System.out.println("evan");
+            } else if (e%2!=0) {
+                System.out.println("odd");
+            }
+            i++;
+        }
 
-                  7
-            int im=1;
-            System.out.println("enter numberto return");
-            int  num9=s.nextInt();
-         do {
-            System.out.println("enter number:");
-          int  num0=s.nextInt();
-
-          if (num0%2==0){
-                  System.out.println("is evan"+num0);
-          }
-          else {
-                  System.out.println("is odd"+num0);
-
-       num9++;   }}while (im>=num9);
 
 
              //ex8
-            System.out.println("enter tha temperature in C");
-            double f=s.nextDouble();
-            double c=(9/5)+32;
-            System.out.println("the convert Form C to F = "+c/f);
+          System.out.println("Enter tha centigrade ");
+      double c=s.nextDouble();
+      double f=(c*1.8)+32;
+        System.out.println("tha convert C to F ="+f);
+
 
 //
         //ex9
-            System.out.println("enter the text");
-            String ch= s.nextLine();
+             System.out.println("enter tha text");
+        String text=s.nextLine();
+        System.out.println("Enter the index");
+        int indexx=s.nextInt();
+        System.out.println(text.charAt(indexx));
 
-           int ch1= ch.length();
-            System.out.println("length is "+ch1);
-
-            System.out.println("enter the index number");
-            int ind= s.nextInt();
-
-            System.out.println("the index char is "+ch.charAt(ind));
 
 
 
 
 //10
-        System.out.println("enter th width");
-        double width=s.nextDouble();
-
-        System.out.println("enter th height");
+        System.out.println("the width");
+        double width= s.nextDouble();
+        System.out.println("the height");
         double height=s.nextDouble();
 
-        double area=width*height;
-        System.out.println("area  ="+area);
-        double perimeter=2*(width+height);
-        System.out.println(" perimeter 2"+"*"+width+height+ "="+ perimeter);
+        double Area=width*height;
+        double preimeter =2*(width+height);
+        System.out.println("Area = "+Area);
+        System.out.println("preimeter = "+preimeter);
+
+
 
 
        //11
 
-//
-        int i=0;
-        System.out.println("Enter the first number");
-        int numm1= s.nextInt();
-        System.out.println("Enter the second number");
-        int numm2= s.nextInt();
+ System.out.println("number1");
+        int num1=s.nextInt();
+        System.out.println("number2");
+        int num2=s.nextInt();
 
-        if (numm2<numm1) {
-            System.out.println(numm2 + "<" + numm1);
-            System.out.println(numm2 + "<=" + numm1);
-            System.out.println(numm2 + "!=" + numm1);
+       if(num2!=num1){
+        System.out.println(num2+"!="+num1);}
+       if (num2<num1){
+            System.out.println(num2+"<"+num1);
+        } else if(num2>num1){
+            System.out.println(num2+">"+num1);
+        } else{
+            System.out.println(num2+"="+num1);
 
+        }
 
             }
 
@@ -153,6 +192,11 @@ StringBuilder rev=new StringBuilder();
 
 }
 
+
+
+
+
+//12
         System.out.println("input second");
         int second=s.nextInt();
         int hours=second/3600;
@@ -160,77 +204,64 @@ StringBuilder rev=new StringBuilder();
         second=second%60;
         System.out.println(hours+":"+minutes+":"+second);
 
-//
-
-
-        System.out.println("enter tha number 1");
-        int d1=s.nextInt();
-//        System.out.println("enter tha number 1");
-        int d2=s.nextInt();
-        System.out.println("enter tha number 1");
-        int d3=s.nextInt();
-        System.out.println("enter tha number 1");
-        int d4=s.nextInt();
-//
 
         //13
-        int im=0;
-        int d2=s.nextInt();
-        while (im<4){
-            System.out.println("enter tha number ");
-            d2=s.nextInt();
-
-            im++;
-        }
-        if (d2==d2){
-            System.out.println("Numbers is equal!");
-        }
-        else {
-            System.out.println("Numbers is Not equal!");
-
+       System.out.println("Enter number1");
+        int number1=s.nextInt();
+        System.out.println("Enter number2");
+        int number2=s.nextInt();
+        System.out.println("Enter number3");
+        int number3=s.nextInt();
+        System.out.println("Enter number4");
+        int number4=s.nextInt();
+        if (number1==number2 && number3==number4 && number1==number3) {
+            System.out.println("Numbers are equal !");
+        }  else {
+            System.out.println("Numbers NOT equaL");
         }
 
 
        //14
-        System.out.println("enter the number");
-        int yu= s.nextInt();
+ System.out.println("enter number");
+int parsone=s.nextInt();
 
-        if(yu>0){
-            System.out.println("positive");
+if (parsone==0){
+    System.out.println("the number is Zero"+parsone);
+}else if (parsone>0){
+    System.out.println("th number is positive "+parsone);
+}else if (parsone<0){
+    System.out.println("th number is negative"+parsone);
 
-        }else if(yu<0){
-            System.out.println("negative");
-        }
-        else if(yu==0){
-            System.out.println("Zero");
         }
 
 
 //15
-
-//
-        System.out.println("enter number");
-        int uo=s.nextInt();
-        if (uo==-1){
-            System.out.println("bay");
-        }
-        int ip=0;
-        do{
-           // System.out.println(uo + "");
-
-            if (uo%2==0) {
-                while (uo%2==0)
-
-                System.out.println(uo + uo+"positives");
-            }
-            else if(uo%2!=0) {
-                System.out.println("negatives"+uo+uo);
-
-            } else if(uo==0){
-                System.out.println("zero");
-            }
-        }while ((ip==uo));
-
+int i=0;
+       int t ;
+       int time;
+       int  p=0;
+       int n=0;
+       int z=0;
+       int exit=0;
+       System.out.println("Enter the number ");
+      do{
+            time =s.nextInt();
+           if (time==0){
+               z=z+1;
+           }
+           else if(time>0){
+              p=p+1;
+           }
+           else if (time<0) {
+           n=n+1;
+           }
+          i++;
+      }
+      while(time!=exit);
+       System.out.println("positives"+p);
+       System.out.println("zero"+ z);
+       System.out.println("nagitive"+ n);;
+       System.out.println("BYE bye");
 
 
 
@@ -239,47 +270,62 @@ StringBuilder rev=new StringBuilder();
 
 
 //16
-        System.out.println("enter tha number ");
-        int d3=s.nextInt();
-        int res=1;
-       for(int iii=d3;d3%10==0;iii--)  {
-            res=res+iii;
-            res++;
-       }
+              System.out.println("enter number");
+        int d=s.nextInt();
+        int raves=0;
+        while (d!=0){
+           int degt=d%10;
+           raves=raves*10+degt;
+           d=d/10;
+        }
+        System.out.println(raves);
+
+    
+//ex17
+        System.out.println("Enter number");
+        int i = 0;
+        int[] value = new int[4];
+        int large=0;
+        int smail = 0;
+
+        while (i <= 3) {
+            value[i] = s.nextInt();
+            System.out.println(Arrays.toString(value));
+
+            if (i == 0) {
+                large = value[i];
+                smail = value[i];
+            } else {
+
+                if (value[i] > large) {
+                    large = value[i];
+                }
+                if (value[i] < smail) {
+                    smail = value[i];
+                }
 
 
-        int iop= s.nextInt();
-while (iop>=3){
-    System.out.println("enter the number");
-    iop++;
-    int rr=0;
-    for (rr=0;rr<iop;iop++){
-        int r3=rr+iop;
-
-        System.out.println("the large num"+r3);
-    }
-
+            }
+            i++;
+        }
+        System.out.println("the large is " + large);
+        System.out.println("the large is " + smail);
 
 
 
         //18
 
-
-
-
-
-      Scanner s = new Scanner(System.in);
-        System.out.println("Enter the text");
+     System.out.println("Enter the text");
         String text = s.nextLine();
         int a;
         int indexa = 0;
         int indexa1 = 0;
-        for (int aa = 0; aa <= text.length(); aa++) {
+        for (int aa = 0; aa < text.length(); aa++) {
             char ch=text.charAt(aa);
-
             if (ch=='a'){
                 indexa++;
                 System.out.print(indexa);
+        
             }
 
 
