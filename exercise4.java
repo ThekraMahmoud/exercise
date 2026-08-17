@@ -11,12 +11,10 @@ public class exercise4 {
 
         
         //Example1
-       int tool = s.nextInt();
        int i = 0;
-       int[] number = new int[tool];
-
        System.out.println(" Can You Please Enter The Lingth of Array ");
-
+       int tool = s.nextInt();
+       // int[] number = new int[tool];
        for (i = 0; i < number.length; i++) {
            System.out.println(" Enter number "+i);
            number[i]=s.nextInt();
@@ -30,29 +28,35 @@ public class exercise4 {
 
 
         //Example 2
-       System.out.println("Enter Tha Array Number");
-       int num=s.nextInt();
-       int[] find=new int[num];
-       int i;
-       for( i=0;i<find.length;i++){
-           System.out.println("Enter Number"+i);
-           find[i]=s.nextInt();
-       }
-       int sum=0;
-         double average=0;
-       int large=find[0];
-       for(int avr:find){
-           sum= sum+avr;
-           average=sum/find.length;
+      System.out.println("Enter Tha Array Number");
+        int num=s.nextInt();
+        int[] find=new int[num];
+        int[] sumLarge=new int[find.length];
+        int i;
+        for( i=0;i<find.length;i++){
+            System.out.println("Enter Number"+i);
+            find[i]=s.nextInt();}
+        int sum=0;
+        double average=0;
+        int large=find[0];
+        for(int avr:find) {
+            sum = sum + avr;
+            average = (double) sum / find.length;
+            int j=0;
+            for (int val : find) {
+                if (val > average) {
+                    sumLarge[j]=val;
+                    j++;
+                }
 
-           if(avr>large){
-               large= avr;
-           }
-       }
-       System.out.println("Tha Value in Array "+Arrays.toString(find));
-       System.out.println("The sum "+ sum);
-       System.out.println("The average "+average);
-       System.out.println("The large Number is "+large);
+            }
+        }            System.out.println("The large Number is " + Arrays.toString(sumLarge));
+
+            // System.out.println("Tha Value in Array " + Arrays.toString(find));
+            // System.out.println("The sum " + sum);
+            // System.out.println("The average " + average);
+            // System.out.println("The large Number is " + sumLarge);
+
 
 
 //Example3
@@ -141,28 +145,28 @@ public class exercise4 {
 
 
 
-//Example 5
-
-        System.out.println("number of Array");
+//Example 6
+System.out.println("number of Array");
 int number=s.nextInt();
 int [] arr1=new int[number];
 int [] arr2=new int[number];
 int i=0;
-int j=0;
+        boolean t =true;
      for( i=0;i<arr1.length;i++) {
-          System.out.println("Enter n of Array 1 ) " + i);
-           arr1[i] = s.nextInt();
+         System.out.println("Enter n of Array 1 ) " + i);
+         arr1[i] = s.nextInt();
      }
-     
-    for (j = 0; j < arr2.length; j++) {
-        System.out.println("Enter n of Array 2 )" + j);
-        arr2[j] = s.nextInt();
-    }
-    
-    j=j-1;
-    i=i-1;
-    if (arr1[i] == arr2[j]) {
-        System.out.println(true);
+    for (i = 0; i < arr2.length; i++) {
+        System.out.println("Enter n of Array 2 )" + i);
+        arr2[i] = s.nextInt();
+
+        if (arr1[i]!= arr2[i]) {
+            System.out.println(false);
+            break;
+
+        }System.out.println(t);
+
+     }
 
 }
         
