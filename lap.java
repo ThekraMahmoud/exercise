@@ -27,11 +27,11 @@
         
 
 //3
+        System.out.println("number of r");
         double r =s.nextInt();
         double o=3.14;
         double area=o*r*r;
-        double primeter=2*o*area;
-        System.out.println("number of r");
+        double primeter=2*o*r;
         System.out.println("The radius"+area);
         System.out.println("tha Perimeter is"+primeter);
 
