@@ -29,10 +29,10 @@ public class exam {
 
       // 2. Write a Java program that accept a String and a number from the user, then print the character at the given index( the number) .
         System.out.println("Enter String");
+        s.nextLine();
         String str=s.nextLine();
         System.out.println("Enter number of index");
         int numIndex=s.nextInt();
-        int ind=0;
         for (int i=0;i<str.length();i++) {
         }
         System.out.println(""+str.charAt(numIndex));
