@@ -188,6 +188,14 @@ public class lap2 {
 
 
 
+        //Example 8
+
+        System.out.println("Enter number of Fibonacci terms:");
+        int n=s.nextInt();
+        fibonacci(n);
+
+
+
     }
     //Example 6
 //    static int random(int min,int max) {
@@ -230,6 +238,24 @@ public class lap2 {
             return 3;
         return 0;
     }
+
+    //Example 8
+
+    static void fibonacci(int n){
+        int a=0;
+        int b=1;
+        for(int i=0;i<n;i++){
+            System.out.println(a+"");
+            int c=a+b;
+            a=b;
+            b=c;
+
+        }
+    }
+
+
+
+
 }
 
 
