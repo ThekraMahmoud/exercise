@@ -60,30 +60,22 @@ public class exercise4 {
 
 
 //Example3
-        System.out.println("Enter number of Array");
-        int i = 0;
-        int num = s.nextInt();
-        int[] bettwen = new int[num];
-        int large = bettwen[0];
-//        int small=bettwen[0];
-        for (int value : bettwen) {
-            System.out.println("number " + i);
-            int input = s.nextInt();
-            bettwen[i] = input;
-            {
-//                if (small > input) {
-//                    small = input;
+        
+       System.out.print("Enter number of elements: ");
+                int num = s.nextInt();
+                int[] array = new int[num];
 
-            }
-            if (large < input) {
-                large = input;
-            }
-            i++;
-        }
-        System.out.println("Array Value" + Arrays.toString(bettwen));
-        System.out.println("The large value = " + large);
-//        System.out.println("The small value = " + small);
-
+                for (int i = 0; i < array.length; i++) {
+                    System.out.print("Enter number " + i + ": ");
+                    array[i] = s.nextInt();
+                }
+                if (array[0] > array[array.length - 1]) {
+                    System.out.println("Larger value between first and last element: " + array[0]);
+                } else {
+                    System.out.println("Larger value between first and last element: " + array[array.length - 1]);
+                }
+        
+        
 
 //Example 4
 
