@@ -28,7 +28,7 @@ public class ecercise5 {
         //Example 3
         System.out.println("Enter PassWord Pleas");
         String password=s.nextLine();
-        if(passwordLength(password)&&rules(password)){
+        if(passwordLength(password)&&rules(password)&&cheknum(password)){
             System.out.println("Tha valid input");
         }else {
             System.out.println("inValid input");
@@ -64,6 +64,15 @@ public class ecercise5 {
     }
     static boolean rules(String password){
             return password.matches("[a-zA-Z0-9]+");
+    }
+    static boolean cheknum(String password){
+        int count=0;
+        for(int i=0;i<password.length();i++){
+            if (Character.isDigit(password.charAt(i))){
+                count++;
+            }
+        }
+        return count>=2;
     }
 
 
