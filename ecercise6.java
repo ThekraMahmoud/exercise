@@ -175,11 +175,11 @@ try {
                System.out.println("Enter second please");
                int second = s.nextInt();
                hours(second);
+               break;
            } catch (InputMismatchException e) {
                System.out.println("jast allow number");
            s.nextLine();
            }
-
        }
 
 
@@ -267,7 +267,7 @@ vsNumber(num1,num2,num3);
            } catch (Exception e) {
                System.out.println(e.getMessage());
            }
-     i++;  }
+   }
 
 
 
@@ -373,7 +373,7 @@ vsNumber(num1,num2,num3);
     //Example 8
 
     static void convert(double c) {
-        double f = (c * 18) + 32;
+        double f = (c * 1.8) + 32;
         System.out.println("tha convert C to F =" + f);
 
     }
